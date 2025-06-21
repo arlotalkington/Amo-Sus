@@ -26,22 +26,26 @@ It supports listing directories with different modes, reading files, and manipul
 
 ```bash
 # List files in C:\Users\arlo with normal mode (hides system files)
-amo-sus.exe ls C:\Users\arlo
+amo_sus.exe ls C:\Users\arlo
 
 # Show all files including system files
-amo-sus.exe ls C:\Users\arlo --mode all
+amo_sus.exe ls C:\Users\arlo --mode all
 
 # Display detailed info about files
-amo-sus.exe ls C:\Users\arlo --mode long
+amo_sus.exe ls C:\Users\arlo -m long # Also works with '-m'
 
 # Print text to the console
-amo-sus.exe echo "Hello, Amo-Sus!"
+amo_sus.exe echo "Hello, Amo-Sus!"
 
 # Overwrite a file with text
-amo-sus.exe echo> output.txt "Overwritten text"
+amo_sus.exe echo> output.txt "Overwritten text"
 
 # Append text to a file
-amo-sus.exe echo>> output.txt "Additional line"
+amo_sus.exe echo>> output.txt "Additional line"
 
 # Read and display a file's content
-amo-sus.exe read output.txt
+amo_sus.exe read output.txt
+
+# Prints all commands
+amo_sus.exe --help
+```
